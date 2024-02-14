@@ -1,0 +1,94 @@
+#ticTacToeGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px; /* Set a fixed width to match the heading and button */
+    margin: 20px auto; /* Add margin to the top and bottom, auto for left and right */
+}
+
+
+#Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
+
+
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+body {
+    background-color: #0000ff; /* Sets the background color to blue for the whole screen */
+    color: white; /* Sets the text color to white */
+    font-family: 'Arial', sans-serif; /* Sets the default font */
+    margin: 0; /* Removes default margin */
+    height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack your items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+
+h1, h2, h3 {
+    text-align: center; /* Center the text */
+    width: 300px; /* Match the width of the grid */
+    margin: 10px auto; /* Center and add space between headings and grid */
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 0; /* Remove bottom margin to tighten spacing */
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px; /* Add some space before the grid */
+}
+
+.winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  
+  .winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+  
+  .winning-message.show {
+    display: flex;
+  }
+
+  #resetButton {
+    width: 300px; /* Match the width of the grid */
+    font-size: 1rem; /* Adjust to your preference */
+    padding: 10px; /* Adjust to your preference for height */
+    margin: auto;
+    cursor: pointer;
+    display : block;/* Match the width of the grid */
+   
+
+
+    /* Add any additional styling you want for the button */
+}
